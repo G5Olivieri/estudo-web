@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">Dropdowns</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">example</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</button>
+            <div class="dropdown-menu" aria-labelledby="about-us">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+        <h1 class="text-center text-capitalize">dropup</h1>
+        <div class="dropup">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</button>
+            <div class="dropdown-menu" aria-labelledby="about-us">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+        <h1 class="text-center text-capitalize">right</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This is wide buttom to demonstrate the alignment</button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="about-us">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">header</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</button>
+            <div class="dropdown-menu" aria-labelledby="about-us">
+                <h6 class="dropdown-header">Company Information</h6>
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <h6 class="dropdown-header">Contat Us</h6>
+                <a href="#" class="dropdown-item">Call Center</a>
+                <a href="#" class="dropdown-item">Store Locations</a>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">dividers</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</button>
+            <div class="dropdown-menu" aria-labelledby="about-us">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">disabled</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="about-us" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</button>
+            <div class="dropdown-menu" aria-labelledby="about-us">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item disabled" style="cursor: default">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
