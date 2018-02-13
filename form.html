@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="display-1 text-capitalize text-center font-weight-bold">forms</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center">form simples</h1>
+        <form action="#">
+            <fieldset class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" class="form-control">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" class="form-control">
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+
+        <h1 class="text-center">form inline</h1>
+        <form action="#" class="form-inline">
+            <fieldset class="form-group">
+                <label for="first_name" class="mr-sm-2 mb-0">First Name</label>
+                <input type="text" name="first_name" id="first_name" 
+                class="form-control mr-sm-3 mb-2 mb-sm-0">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="last_name" class="mr-sm-2 mb-0">Last Name</label>
+                <input type="text" name="last_name" id="last_name" 
+                class="form-control mb-2 mr-sm-3 mb-sm-0">
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="submit" class="btn btn-primary mt-0 mt-sm-0">Submit</button>
+            </fieldset>
+        </form>
+
+        <h1 class="text-center">form label hide</h1>
+        <form action="#">
+            <fieldset class="form-group">
+                <label for="first_name" class="mr-sm-2 mb-0 sr-only">First Name</label>
+                <input type="text" name="first_name" id="first_name" 
+                class="form-control mr-sm-3 mb-2 mb-sm-0" placeholder="First Name">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="last_name" class="mr-sm-2 mb-0 sr-only">Last Name</label>
+                <input type="text" name="last_name" id="last_name" 
+                class="form-control mb-2 mr-sm-3 mb-sm-0" placeholder="Last Name">
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="submit" class="btn btn-primary mt-0 mt-sm-0">Submit</button>
+            </fieldset>
+        </form>
+        <div class="container">
+            <form action="#">
+                <fieldset class="form-group row">
+                    <label for="first_name" class="col-xs-3 col-form-label mr-3">First Name</label>
+                    <div class="col-xs-9">
+                        <input type="text" name="first_name" id="first_name" 
+                        class="form-control">
+                    </div>
+                </fieldset>
+                <fieldset class="form-group row">
+                    <label for="last_name" class="col-xs-3 col-form-label mr-3">Last Name</label>
+                    <div class="col-xs-9">
+                        <input type="text" name="last_name" id="last_name" 
+                        class="form-control">
+                    </div>
+                </fieldset>
+                <fieldset class="form-group row">
+                    <div class="offset-xs-3 col-xs-9">
+                        <button type="submit"
+                        class="btn btn-primary">Submit</button>                        
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
