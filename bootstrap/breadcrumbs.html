@@ -12,11 +12,22 @@
 </head>
 <body>
     <header class="jumbotron">
-            <h1 class="display-1 text-capitalize text-center font-weight-bold">base</h1>
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">breadcrumbs</h1>
     </header>
     <div class="container">
-        <h1 class="text-center text-capitalize">title</h1>
-        <p>Content</p>
+        <h1 class="text-center text-capitalize">simple</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Fruit</a></li>
+            <li class="breadcrumb-item active">Pears</li>
+        </ul>
+
+        <h1 class="text-center text-capitalize">nav</h1>
+        <nav class="breadcrumb">
+            <a href="#" class="breadcrumb-item">Home</a>
+            <a href="#" class="breadcrumb-item">Fruit</a>
+            <span class="breadcrumb-item active">Pears</span>
+        </nav>            
     </div>
     <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
     <!-- jQuery library -->

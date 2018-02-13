@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">collapse</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">link</h1>
+        <p><a href="#footwear" data-toggle="collapse" 
+            aria-expanded="false" aria-controls="footwear">Footwear</a></p>
+        <p>
+            <div class="collapse" id="footwear">
+                <p>Footwear refers to garments worn on the feet, which originally
+                        serves to purpose of protection against adversities of the 
+                        environment, usually regarding ground textures and temperature</p>
+            </div>
+        </p>
+
+        <h1 class="text-center text-capitalize">button</h1>
+        <button type="button" data-target="#footwear1" class="btn btn-info" aria-expanded="false"
+             data-toggle="collapse" aria-controls="footwear1">Footwear</button></p>
+        
+        <div class="collapse" id="footwear1">
+            <p>Footwear refers to garments worn on the feet, which originally
+                    serves to purpose of protection against adversities of the 
+                    environment, usually regarding ground textures and temperature</p>
+        </div>
+
+        <h1 class="text-center text-capitalize">accordion</h1>
+        <div id="faq" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="questionOne">
+                    <h5 class="card-title">
+                        <a data-toggle="collapse" data-parent="#faq" 
+                        href="#answerOne" aria-expanded="true" aria-controls="answerOne">
+                            What if my boots are too big for my feet?
+                        </a>
+                    </h5>
+                </div>
+                <div id="answerOne" class="collapse show" role="tabCard" aria-labelledby="questionOne">
+                    <div class="card-body">
+                        Stuff your boots with newspaper or tissue
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" role="tab" id="questionTwo">
+                    <h5 class="card-title">
+                        <a data-toggle="collapse" data-parent="#faq" 
+                        href="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+                            Can I wear my boots inside?
+                        </a>
+                    </h5>
+                </div>
+                <div id="answerTwo" class="collapse" role="tabCard" aria-labelledby="questionTwo">
+                    <div class="card-body">
+                        No. Your mama should've told you about this. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="questionThree">
+                    <h5 class="card-title">
+                        <a data-toggle="collapse" data-parent="#faq" 
+                        href="#answerThree" aria-expanded="false" aria-controls="answerThree">
+                            What if my boots get slippery when wet? 
+                        </a>
+                    </h5>
+                </div>
+                <div id="answerThree" class="collapse" role="tabCard" aria-labelledby="answerThree">
+                    <div class="card-body">
+                        Keep your boots dry. 
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>

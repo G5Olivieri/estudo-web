@@ -12,12 +12,103 @@
 </head>
 <body>
     <header class="jumbotron">
-            <h1 class="display-1 text-capitalize text-center font-weight-bold">base</h1>
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">buttons custom</h1>
     </header>
     <div class="container">
-            <h1 class="text-center text-capitalize">title</h1>
-            <p>Content</p>
+        <h1 class="text-center text-capitalize">horizontal button group</h1>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary">Thailand</button>
+            <button type="button" class="btn btn-primary">Cambodia</button>
+            <button type="button" class="btn btn-primary">Vietnam</button>
+        </div>
+
+        <h1 class="text-center text-capitalize">vertical button group</h1>
+        <div class="btn-group-vertical" role="group">
+            <button type="button" class="btn btn-primary">Thailand</button>
+            <button type="button" class="btn btn-primary">Cambodia</button>
+            <button type="button" class="btn btn-primary">Vietnam</button>
+        </div>
+
+        <h1 class="text-center text-capitalize">size</h1>
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-primary">Small</button>
+            <button type="button" class="btn btn-primary">Small</button>
+            <button type="button" class="btn btn-primary">Small</button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary">Default</button>
+            <button type="button" class="btn btn-primary">Default</button>
+            <button type="button" class="btn btn-primary">Default</button>
+        </div>
+        <div class="btn-group btn-group-lg" role="group">
+            <button type="button" class="btn btn-primary">Large</button>
+            <button type="button" class="btn btn-primary">Large</button>
+            <button type="button" class="btn btn-primary">Large</button>
+        </div>
+
+        <h1 class="text-center text-capitalize">toolbar</h1>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group mr-2" role="group">
+                <button class="btn btn-primary" type="button">Group 1</button>
+                <button class="btn btn-primary" type="button">Group 1</button>
+                <button class="btn btn-primary" type="button">Group 1</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" type="button">Group 2</button>
+                <button class="btn btn-primary" type="button">Group 2</button>                    
+            </div>
+        </div>
+        
+        <h1 class="text-center text-capitalize">dropdown with group</h1>
+        <div class="btn-group" role="group">
+            <button class="btn btn-primary" type="button">Buy</button>
+            <button class="btn btn-primary" type="button">Shell</button>
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary dropdown-toggle" id="about-us" type="button" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">
+                    About Us
+                </button>
+            </div>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+        
+        <h1 class="text-center text-capitalize">split dropdown</h1>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success">About Us</button>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" id="about-us1" aria-expanded="false" aria-haspopup="true">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Our Story</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
     </div>
     <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">nav</h1>
+    </header>
+    <div class="container">
+            <h1 class="text-center text-capitalize">base</h1>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link active">HTML</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Preview</a></li>
+            </ul>
+
+            <h1 class="text-center text-capitalize">nav tag</h1>
+            <nav class="nav">
+                <a href="#" class="nav-link active">HTML</a>
+                <a href="#" class="nav-link">CSS</a>
+                <a href="#" class="nav-link">JavaScript</a>
+                <a href="#" class="nav-link">Preview</a>
+            </nav>
+
+            <h1 class="text-center text-capitalize">vertical nav</h1>
+            <nav class="nav flex-column">
+                <a href="#" class="nav-link active">HTML</a>
+                <a href="#" class="nav-link">CSS</a>
+                <a href="#" class="nav-link">JavaScript</a>
+                <a href="#" class="nav-link">Preview</a>
+            </nav>        
+            
+        <h1 class="text-center text-capitalize">tab</h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Preview</a>
+            </li>
+        </ul>
+        
+        <h1 class="text-center text-capitalize">pills</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Preview</a>
+            </li>
+        </ul>
+        
+        <h1 class="text-center text-capitalize">vertical pills</h1>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Preview</a>
+            </li>
+        </ul>
+
+        <h1 class="text-center text-capitalize">disable link</h1>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Preview</a>
+            </li>
+        </ul>
+
+        <h1 class="text-center text-capitalize">tabs with dropdown</h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true" aria-expanded="false">Preview</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Mobile Phone</a>
+                    <a href="#" class="dropdown-item">Laptop</a>
+                    <a href="#" class="dropdown-item">Desktop</a>
+                </div>
+            </li>
+        </ul> 
+
+        <h1 class="text-center text-capitalize">pills with dropdown</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">JavaScript</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true" aria-expanded="false">Preview</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Mobile Phone</a>
+                    <a href="#" class="dropdown-item">Laptop</a>
+                    <a href="#" class="dropdown-item">Desktop</a>
+                </div>
+            </li>
+        </ul>  
+
+        <h1 class="text-center text-capitalize">pills with dropdown</h1>
+        <ul id="clothin-nav" class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active" id="home-tab" aria-expanded="true"
+                aria-controls="home" role="tab" data-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#hats" class="nav-link" id="hats-tab" aria-expanded="false"
+                aria-controls="hats" role="tab" data-toggle="tab">Hats</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true" aria-expanded="false">Footwear</a>
+                <div class="dropdown-menu">
+                    <a href="#dropdown-shoes" class="dropdown-item" role="tab" 
+                    id="dropdown-shoes-tab" data-toggle="tab" aria-controls="dropDownShoes">Shoes</a>
+                    <a href="#dropdown-boots" class="dropdown-item" role="tab"
+                    id="dropdown-boots-tab" data-toggle="tab" aria-controls="dropDownBoots">Boots</a>
+                </div>
+            </li>
+        </ul>
+        <div id="clothing-nav-content" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="home" aria-labelledby="home-tab">
+                <p>Welcome home! click on the tabs to see the content change.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="hats" aria-labelledby="hats-tab">
+                <p>A hat is a head covering. It can be worn for protection against the 
+                    elements, ceremonial reasons, religious reasons, safety, or as a fashion accessory.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-shoes" aria-labelledby="dropdown-shoes-tab">
+                <p>A shoe is an item of footwear intended to protect and comfort the human foot while doing
+                     various activities. Shoes are also used as an item of decoration.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown-boots" aria-labelledby="dropdown-boots-tab">
+                <p>A boot is a type of footwear and a specific type of shoe. Most boots mainly cover the
+                     foot and the ankle, while some also cover some part of the lower calf. Some boots extend 
+                     up the leg, sometimes as far as the knee or even the hip.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>

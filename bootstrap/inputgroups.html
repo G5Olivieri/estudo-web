@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">input groups</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">.00 fixed</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="1000" aria-label="Amount (rounded to the nearest dollar)"
+            aria-describedby="basic-addon">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon">.00</span>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">text on both sides</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" placeholder="1000" aria-label="Amount (rounded to the nearest dollar)"
+            aria-describedby="basic-addon1">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+        
+        <h1 class="text-center text-capitalize">text on both sides</h1>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Small</span>
+            </div>
+            <input type="text" class="form-control" placeholder="1000" aria-label="Amount (rounded to the nearest dollar)"
+            aria-labelledby="basic-addon2">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Medium</span>
+            </div>
+            <input type="text" class="form-control" placeholder="1000" aria-label="Amount (rounded to the nearest dollar)"
+            aria-labelledby="basic-addon2">
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Large</span>
+            </div>
+            <input type="text" class="form-control" placeholder="1000" aria-label="Amount (rounded to the nearest dollar)"
+            aria-labelledby="basic-addon2">
+        </div>
+
+        <h1 class="text-center text-capitalize">checkboxes & radio buttons</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio" aria-label="Radio for following text input">
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with radio">
+        </div>
+
+        <h1 class="text-center text-capitalize">button addons</h1>
+        <div class="input-group mb-3">
+            <input type="text" placeholder="Enter your search term" class="form-control" aria-label="Search term" aria-labelledby="basic-addon3">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-secondary">Search!</button>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">dropdown</h1>     
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <div class="input-group-append">
+                <button class="btn btn-primary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Dropdown</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                    <a href="#" class="dropdown-item">Something else here</a>
+                    <div class="dropdown-diviser" role="separator"></div>
+                    <a href="#" class="dropdown-item">Separated link</a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">split dropdown</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary">Action</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                data-toggle="dropdown" aria-expand="false" aria-haspopup="true">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                    <a href="#" class="dropdown-item">Something else here</a>
+                    <div class="dropdown-diviser" role="separator"></div>
+                    <a href="#" class="dropdown-item">Separated link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
