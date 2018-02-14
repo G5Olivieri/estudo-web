@@ -11,12 +11,12 @@ npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-
 Em seguida
 
 ```bash
-npm i -S react react-dom reactstrap react-transition-group
+npm i -S react react-dom reactstrap react-transition-group bootstrap
 ```
 ou
 
 ```bash
-npm install --save react react-dom reactstrap react-transition-group
+npm install --save react react-dom reactstrap react-transition-group bootstrap
 ```
 
 <h2 align="center">Configurando</h2>
