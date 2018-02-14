@@ -1,7 +1,7 @@
 <h2 align="center">Instalando as dependências para rodar ReactJS.</h2>
 
 ```bash
-npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader 
+npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader bootstrap 
 ```
 ou 
 
@@ -11,12 +11,12 @@ npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-
 Em seguida
 
 ```bash
-npm i -S react react-dom
+npm i -S react react-dom reactstrap react-transition-group
 ```
 ou
 
 ```bash
-npm install --save react react-dom
+npm install --save react react-dom reactstrap react-transition-group
 ```
 
 <h2 align="center">Configurando</h2>
@@ -46,8 +46,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
-                use: ['style-loader', 'css-loader']
+                loader: 'style-loader!css-loader'
             }
         ]
     }
@@ -62,17 +61,27 @@ adicione os scripts em **package.json**
 
 <h2 align="center">Testando</h2>
 
-dentro da pasta app crie um arquivo **App.jsx** e insira
+**./app/App.jsx**
+```jsx
+import {render} from 'react-dom';
+import {example} from "./components/Example.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+render(example(), document.getElementById('app'));
+```
+
+**./app/components/Example.jsx**
 ```jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
-import '../css/style.css';
+import { Button } from 'reactstrap';
 
-ReactDOM.render(<h1>Hello World!</h1>, document.getElementById('app'));
+export const example = () => {
+    return (
+        <Button color="danger">Danger!</Button>
+    );
+};
 ```
-Crie também dois arquivos **./public/index.html** e **./css/style.css**.
 
-**index.html**
+**./public/index.html**
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -84,13 +93,6 @@ Crie também dois arquivos **./public/index.html** e **./css/style.css**.
     <script src="./bundle.js"></script>
 </body>
 </html>
-```
-style.css
-```css
-h1{
-    color: pink;
-    background-color: red;
-}
 ```
 
 <h2 align="center">Rodando</h2>
