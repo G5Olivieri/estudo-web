@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">tooltips</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">sample</h1>
+        <p style="margin: 40px">Check out my <a href="#" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="Build advanced layouts easily with CSS!">Grid tutorial</a>,
+            as you never know when you might need it!
+        </p>
+
+        <h1 class="text-center text-capitalize">button</h1>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Top Shoes" style="margin: 20px">
+            Shoes
+        </button>
+
+        <h1 class="text-center text-capitalize">position</h1>        
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+        title="Top shoes" style="margin: 20px;">Shoes</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right"
+        title="Right boot" style="margin: 30px;">Boots</button>
+        <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom"
+        title="Bottom ugg" style="margin: 20px;">Ugg</button>
+        <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="left"
+        title="Left sock" style="margin: 20px;">Socks</button>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>

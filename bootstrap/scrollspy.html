@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">scrollspy</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">sample</h1>
+        <nav id="scrollspy-nav" class="navbar navbar-default">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#bast" class="nav-link">Bast</a></li>
+                <li class="nav-item"><a href="#brogan" class="nav-link">Brogan</a></li>
+                <li class="nav-item"><a href="#calceology" class="nav-link">Calceology</a></li>                
+            </ul>
+        </nav>
+
+        <article data-spy="scroll" data-target="#scrollspy-nav" data-offset="0"
+        style="overflow: scroll; width: 60vw; height: 70vh; font-size: 4vw;">
+            <h4 id="bast">Bast Shoes</h4>
+            <p>
+                Bast shoes are shoes made primarily from bast (fiber from the 
+                bark of the linden tree or birch tree). They are a kind of 
+                basket, woven and fitted to the shape of a foot. Bast shoes 
+                are an obsolete traditional footwear of the forest areas of 
+                Northern Europe, formerly worn by poorer members of the Finnic 
+                peoples, Balts, and East Slavs. They were easy to manufacture,
+                but not durable.
+            </p>
+
+            <h4 id="brogan">Brogan</h4>
+            <p>
+                Brogan-like shoes, called "brogues", were made and worn in 
+                Scotland and Ireland as early as the 16th century, and the
+                shoe-type probably originated there.
+            </p>
+            
+            <h4 id="calceology">Calceology</h4>
+            <p>
+                Calceology is the study of footwear, especially historical
+                footwear whether as archaeology, shoe fashion history, or otherwise.
+            </p>
+            <p>
+                Calceology comprises the examination, registration, research
+                and conservation of leather shoe fragments.
+            </p>
+            <p>
+                However, calceology is not yet formally recognized as a field
+                of research. 
+            </p>
+        </article>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
