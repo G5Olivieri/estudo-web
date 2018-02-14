@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">alerts</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">sample</h1>
+        <div class="alert alert-success" role="alert">Sucess alert</div>
+        <div class="alert alert-info" role="alert">Info alert</div>
+        <div class="alert alert-warning" role="alert">Warning alert</div>
+        <div class="alert alert-danger" role="alert">Danger alert</div>
+        <div class="alert alert-light" role="alert">Light alert</div>
+        <div class="alert alert-dark" role="alert">Dark alert</div>
+
+        <h1 class="text-center text-capitalize">dismissible</h1>
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Congratulations!</strong> You successfully tied your shoelace!
+        </div>
+
+        <h1 class="text-center text-capitalize">fading effect</h1>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Congratulations!</strong> You successfully tied your shoelace!
+        </div>
+
+        <h1 class="text-center text-capitalize">with links</h1>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Congratulations!</strong> Now you're ready to do the 
+            <a href="#" class="alert-link">next shoelace</a>.
+        </div>
+        
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>

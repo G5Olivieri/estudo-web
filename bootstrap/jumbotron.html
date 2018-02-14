@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">jumbotron</h1>
+    </header>
+    <h1 class="text-center text-capitalize">sample</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>My Jumbotron</h1>
+            <p>Think BIG with Bootstrap Jumbotron</p>
+        </div>
+    </div>
+
+    <h1 class="text-center text-capitalize">full width</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>My Jumbotron</h1>
+            <p>Think BIG with Bootstrap Jumbotron</p>
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
