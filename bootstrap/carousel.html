@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .container h1{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+            <h1 class="display-1 text-capitalize text-center font-weight-bold">carousel</h1>
+    </header>
+    <div class="container">
+        <h1 class="text-center text-capitalize">sample</h1>
+        <div id="myCarousel" class="carousel slide w-50 ml-auto mr-auto" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/aguia.jpg" alt="Aguia" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/aguia1.jpg" alt="Aguia 2" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camaleao.jpg" alt="Camaleao" class="d-block w-100" height="350px">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center text-capitalize">controls</h1>
+        <div id="myCarousel1" class="carousel bg-inverse slide w-50 ml-auto mr-auto" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/aguia.jpg" alt="Aguia" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/aguia1.jpg" alt="Aguia 2" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camaleao.jpg" alt="Camaleao" class="d-block w-100" height="350px">
+                </div>
+            </div>
+            <a href="#myCarousel1" class="carousel-control-prev"
+            type="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previus</span>
+            </a>
+            <a href="#myCarousel1" class="carousel-control-next"
+            type="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h1 class="text-center text-capitalize">indicators</h1>
+        <div id="myCarousel2" class="carousel bg-inverse slide w-50 ml-auto mr-auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0"
+                class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/aguia.jpg" alt="Aguia" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/aguia1.jpg" alt="Aguia 2" class="d-block w-100" height="350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camaleao.jpg" alt="Camaleao" class="d-block w-100" height="350px">
+                </div>
+            </div>
+            <a href="#myCarousel2" class="carousel-control-prev"
+            type="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previus</span>
+            </a>
+            <a href="#myCarousel2" class="carousel-control-next"
+            type="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h1 class="text-center text-capitalize">captions</h1>
+        <div id="myCarousel3" class="carousel bg-inverse slide w-50 ml-auto mr-auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel3" data-slide-to="0"
+                class="active"></li>
+                <li data-target="#myCarousel3" data-slide-to="1"></li>
+                <li data-target="#myCarousel3" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/aguia.jpg" alt="Aguia" class="d-block w-100" height="350px">
+                    <div class="carousel-caption">
+                        <h3>First slide</h3>
+                        <p>This is the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/aguia1.jpg" alt="Aguia 2" class="d-block w-100" height="350px">
+                    <div class="carousel-caption">
+                        <h3>Second slide</h3>
+                        <p>This is the second slide</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camaleao.jpg" alt="Camaleao" class="d-block w-100" height="350px">
+                    <div class="carousel-caption">
+                        <h3>Third slide</h3>
+                        <p>This is the third slide</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel3" class="carousel-control-prev"
+            type="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previus</span>
+            </a>
+            <a href="#myCarousel3" class="carousel-control-next"
+            type="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <footer class="jumbotron mt-5 mb-0"><h2 class="text-capitalize text-center">that's all folks</h2></footer>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
