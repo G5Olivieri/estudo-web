@@ -6,7 +6,7 @@ npm init
 ```
 
 ```bash
-npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader bootstrap 
+npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader bootstrap 
 ```
 ou 
 
