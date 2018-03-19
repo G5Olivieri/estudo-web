@@ -1,5 +1,10 @@
 <h2 align="center">Instalando as dependências para rodar ReactJS.</h2>
 
+Escolha a pasta do projeto abra o cmd
+```bash
+npm init
+```
+
 ```bash
 npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader bootstrap 
 ```
