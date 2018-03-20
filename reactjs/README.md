@@ -6,12 +6,12 @@ npm init
 ```
 
 ```bash
-npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader bootstrap 
+npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader bootstrap webpack-cli
 ```
 ou 
 
 ```bash
-npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader 
+npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader webpack-cli
 ```
 Em seguida
 
@@ -40,7 +40,7 @@ module.exports = {
         port: 8080
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
