@@ -6,22 +6,22 @@ npm init
 ```
 
 ```bash
-npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader bootstrap webpack-cli
+npm i -D webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader webpack-cli
 ```
 ou 
 
 ```bash
-npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader webpack-cli
+npm install --save-dev webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader style-loader webpack-cli
 ```
 Em seguida
 
 ```bash
-npm i -S react react-dom reactstrap react-transition-group bootstrap
+npm i -S react react-dom prop-types
 ```
 ou
 
 ```bash
-npm install --save react react-dom reactstrap react-transition-group bootstrap
+npm install --save react react-dom prop-types
 ```
 
 <h2 align="center">Configurando</h2>
@@ -60,8 +60,8 @@ module.exports = {
 
 adicione os scripts em **package.json**
 ```json
-"build": "webpack",
-"start": "webpack-dev-server"
+"build": "webpack --mode production",
+"start": "webpack-dev-server --mode production"
 ```
 
 <h2 align="center">Testando</h2>
